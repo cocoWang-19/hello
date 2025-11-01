@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>Coco 的互動網站</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    .highlight { color: red; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>歡迎來到 Coco 的 GitHub 網站！</h1>
+  <button id="toggle">點我切換文字樣式</button>
+  <p id="text">這段文字會變色喔！</p>
+
+  <script>
+    $(document).ready(function() {
+      $('#toggle').click(function() {
+        $('#text').toggleClass('highlight');
+      });
+    });
+  </script>
+</body>
+</html>
